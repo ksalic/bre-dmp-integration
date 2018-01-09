@@ -1,0 +1,16 @@
+definitions:
+  config:
+    /hippo:configuration/hippo:frontend/cms/hippo-targeting/characteristic-dmp_foo:
+      jcr:primaryType: frontend:plugin
+      characteristic: dmp_foo
+      collector: dmp_foo
+      plugin.class: com.bloomreach.relevance.dmp.cms.DataIntegrationCharacteristicPlugin
+      visitor.characteristic.visible: true
+      valuelist: /content/documents/administration/dmp/dmp_foo
+      dmp.platform: Foo DMP
+    /hippo:configuration/hippo:frontend/cms/hippo-targeting/collector-dmp_foo:
+      jcr:primaryType: frontend:plugin
+      collector: dmp_foo
+      plugin.class: com.bloomreach.relevance.dmp.cms.DataIntegrationCollectorPlugin
+      valuelist: /content/documents/administration/dmp/dmp_foo
+      dmp.platform: Foo DMP

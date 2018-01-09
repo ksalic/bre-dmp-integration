@@ -1,0 +1,5 @@
+definitions:
+  config:
+    /targeting:targeting/targeting:collectors/dmp_foo:
+      jcr:primaryType: targeting:collector
+      targeting:className: com.bloomreach.relevance.dmp.targeting.DataIntegrationCollector

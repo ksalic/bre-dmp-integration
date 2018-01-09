@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.onehippo.dmp</groupId>
+    <artifactId>dmp-integration</artifactId>
+    <version>0.1.0-SNAPSHOT</version>
+  </parent>
+  <artifactId>dmp-site</artifactId>
+  <packaging>pom</packaging>
+
+  <name>DMP Site</name>
+  <description>DMP Site</description>
+
+  <build>
+    <defaultGoal>package</defaultGoal>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-install-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>install-temp-dmp-int-site</id>
+            <phase>validate</phase>
+            <goals>
+              <goal>install-file</goal>
+            </goals>
+            <configuration>
+              <file>${project.basedir}/lib/dmp-site-0.1.0-PUBLIC.jar</file>
+              <repositoryLayout>default</repositoryLayout>
+              <groupId>com.onehippo.dmp</groupId>
+              <artifactId>dmp-site</artifactId>
+              <version>0.1.0-PUBLIC</version>
+              <packaging>jar</packaging>
+              <generatePom>true</generatePom>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+
+</project>

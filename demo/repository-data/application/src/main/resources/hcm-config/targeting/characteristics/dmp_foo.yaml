@@ -1,0 +1,14 @@
+definitions:
+  config:
+    /targeting:targeting/targeting:characteristics/dmp_foo:
+      jcr:primaryType: targeting:characteristic
+      targeting:collector: dmp_foo
+      targeting:scorerClassName: com.bloomreach.relevance.dmp.targeting.DataIntegrationScorer
+      /apples4ever-1515418673098:
+        jcr:primaryType: targeting:targetgroup
+        targeting:name: Apples 4 ever
+        targeting:propertynames: [data.get("interestedIn").asText()=="apples"]
+      /orangelife-1515418687161:
+        jcr:primaryType: targeting:targetgroup
+        targeting:name: '#Orangelife'
+        targeting:propertynames: [data.get("interestedIn").asText()=="oranges"]

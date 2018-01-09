@@ -1,0 +1,41 @@
+/content/documents/administration/dmp:
+  jcr:primaryType: hippostd:folder
+  jcr:mixinTypes: ['mix:versionable']
+  jcr:uuid: 8460d536-21cd-4edc-8c9a-b66814d30665
+  hippostd:foldertype: [new-document]
+  /sync-whitelist:
+    jcr:primaryType: hippo:handle
+    jcr:mixinTypes: ['hippo:named', 'mix:referenceable']
+    jcr:uuid: 10ad13d9-9955-4b13-941b-8e21f3105c8e
+    hippo:name: sync whitelist
+    /sync-whitelist:
+      jcr:primaryType: selection:valuelist
+      jcr:mixinTypes: ['hippotranslation:translated', 'mix:referenceable']
+      jcr:uuid: 87529e4f-8707-4eee-8add-475a6e0c3412
+      hippo:availability: [live, preview]
+      hippotranslation:id: 97988fc7-af0f-47a3-a84f-387a6fbbfc88
+      hippotranslation:locale: inherited - from query
+      /selection:listitem:
+        jcr:primaryType: selection:listitem
+        selection:key: localhost
+        selection:label: local env
+  /dmp_foo:
+    jcr:primaryType: hippo:handle
+    jcr:mixinTypes: ['hippo:named', 'mix:referenceable']
+    jcr:uuid: a97abbc2-c2e6-4f8c-b1b0-2878008a20e6
+    hippo:name: dmp foo
+    /dmp_foo:
+      jcr:primaryType: selection:valuelist
+      jcr:mixinTypes: ['hippotranslation:translated', 'mix:referenceable']
+      jcr:uuid: 38d47151-378b-43e7-91d1-9486edd25cf1
+      hippo:availability: [live, preview]
+      hippotranslation:id: 2a1cb793-2e66-4db4-b15d-38a386948204
+      hippotranslation:locale: inherited - from query
+      /selection:listitem[1]:
+        jcr:primaryType: selection:listitem
+        selection:key: data.get("interestedIn").asText()=="oranges"
+        selection:label: Likes Oranges
+      /selection:listitem[2]:
+        jcr:primaryType: selection:listitem
+        selection:key: data.get("interestedIn").asText()=="apples"
+        selection:label: Likes Apples

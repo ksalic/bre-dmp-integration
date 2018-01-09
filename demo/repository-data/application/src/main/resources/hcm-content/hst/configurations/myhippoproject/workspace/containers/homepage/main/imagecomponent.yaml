@@ -1,0 +1,19 @@
+/hst:hst/hst:configurations/myhippoproject/hst:workspace/hst:containers/homepage/main/imagecomponent:
+  jcr:primaryType: hst:containeritemcomponent
+  hst:componentclassname: org.onehippo.cms7.essentials.components.EssentialsImageComponent
+  hst:iconpath: images/essentials/catalog-component-icons/image.png
+  hst:label: Image
+  hst:parameternameprefixes: ['@1515491198$["and",{"dmp_foo":"orangelife-1515418687161"}]',
+    '@1515491198$["and",{"dmp_foo":"orangelife-1515418687161"}]', '@1515491198$["and",{"dmp_foo":"orangelife-1515418687161"}]',
+    '@1515491159$["and",{"dmp_foo":"apples4ever-1515418673098"}]', '@1515491159$["and",{"dmp_foo":"apples4ever-1515418673098"}]',
+    '@1515491159$["and",{"dmp_foo":"apples4ever-1515418673098"}]', '', '', '']
+  hst:parameternames: [com.onehippo.cms7.targeting.TargetingParameterUtil.hide, document,
+    org.hippoecm.hst.core.component.template, com.onehippo.cms7.targeting.TargetingParameterUtil.hide,
+    document, org.hippoecm.hst.core.component.template, com.onehippo.cms7.targeting.TargetingParameterUtil.hide,
+    document, org.hippoecm.hst.core.component.template]
+  hst:parametervalues: ['off', /content/gallery/myhippoproject/samples/orange-whole--split.jpg,
+    'webfile:/freemarker/hstdefault/image-component.ftl', 'off', /content/gallery/myhippoproject/samples/apples.jpg,
+    'webfile:/freemarker/hstdefault/image-component.ftl', 'off', /content/gallery/myhippoproject/samples/5431a80b-9ab9-486c-906a-e3d4b5ccaa96-hello-world.png,
+    'webfile:/freemarker/hstdefault/image-component.ftl']
+  hst:template: image-component
+  hst:xtype: hst.item
